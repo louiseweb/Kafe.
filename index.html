@@ -10,20 +10,34 @@
 </head>
     <body>
         <header class="header">
-            <div class="header__content container">
-                <a class="header__logo" href="#"><img src="Images/Logo-white.png" alt="Kafe Logo"></a>
-                <nav class="header__nav">
-                    <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+            <div class="header-content container">
+                <a class="header-logo" href="#"><img src="Images/Logo-white.png" alt="Kafe Logo"></a>
+                <nav class="nav">
+                    <ul class="nav-items">
+                        <li class="nav-item">
+                                <a href="#">Home</a>
+                                <button><i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                            <ul class="nav-item-inner">
+                                <li><a href="#">Home 01</a></li>
+                                <li><a href="#">Home 02</a></li> 
+                            </ul>          
+                        </li> 
+                        <li class="nav-item"><a href="#">Services</a></li> 
+                        <li class="nav-item"><a href="#">About</a></li> 
+                        <li class="nav-item">
+                            <a href="#">Blog</a>
+                            <button><i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                        </li> 
+                        <li class="nav-item"><a href="#">Contact</a></li> 
                     </ul>
                 </nav>
-                <i class="header__icon fa-solid fa-magnifying-glass"></i>
-                <i class="header__icon fa-solid fa-bag-shopping"></i>
-                <a class="btn" href="#">Signup</a>
+                <div class="header-right d-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <a class="btn" href="#">Signup</a>
+                </div>
+                <a class="header-btn-open" href="#"><i class="fa-sharp fa-solid fa-bars fa-xl"></i></a>
+                
             </div>
         </header>
         
