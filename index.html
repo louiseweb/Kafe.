@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Kafe - Coffee Shop</title>
 </head>
     <body>
-        <header class="header">
+        <!-- Header -->
+        <header class="header" id="header">
             <div class="header-content container">
                 <a class="header-logo" href="#"><img src="Images/Logo-white.png" alt="Kafe Logo"></a>
-                <nav class="nav">
+                <nav class="nav d-none" id="nav">
                     <ul class="nav-items">
                         <li class="nav-item">
-                                <a href="#">Home</a>
-                                <button><i class="fa-sharp fa-solid fa-chevron-down"></i></button>
-                            <ul class="nav-item-inner">
-                                <li><a href="#">Home 01</a></li>
-                                <li><a href="#">Home 02</a></li> 
-                            </ul>          
+                            <a href="#">Home</a>
+                            <button><i class="fa-sharp fa-solid fa-chevron-down"></i></button>       
                         </li> 
                         <li class="nav-item"><a href="#">Services</a></li> 
                         <li class="nav-item"><a href="#">About</a></li> 
@@ -31,15 +29,51 @@
                         <li class="nav-item"><a href="#">Contact</a></li> 
                     </ul>
                 </nav>
-                <div class="header-right d-none">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <a class="btn" href="#">Signup</a>
-                </div>
-                <a class="header-btn-open" href="#"><i class="fa-sharp fa-solid fa-bars fa-xl"></i></a>
-                
+                <div class="header-right">
+                    <button class="header-icon d-none"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                    <button class="header-icon d-none"><i class="fa-solid fa-bag-shopping fa-xl"></i></button>  
+                    <a class="header-signup btn btn-primary d-none" href="#">Signup</a>
+                    <a class="header-btn-open" id="btn-open" href="#"><i class="fa-sharp fa-solid fa-bars fa-xl"></i></a>
+                    <a class="header-btn-close d-none" id="btn-close" href="#"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+                </div>    
             </div>
         </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="hero-header animate__animated animate__fadeInUp">Your guide to the world of drinking great coffee.</h1>
+                <p class="hero-text animate__animated animate__fadeInUp">The suppliers and producers we work with are at the top of their game. It’s our role to carry the magic from their hands to your table.</p>
+                <div class="hero-btns animate__animated animate__fadeInUp">
+                    <a class="hero-btn btn btn-primary" href="#">Book a table</a>
+                    <a class="hero-btn btn btn-secondary" href="#">Discover now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features-->
+        <section class="features">
+            <div class="features-content container">
+                <div class="features-row-01">
+                    <p class="features-text">From floral and bright to bold and smooth coffee flavors</p>
+                    <h2 class="features-header">Providing unique coffee experiences</h2>
+                    <img class="features-deco" src="Images/Decoration.png" alt="">
+                </div>
+                <div class="features-row-02">
+                    <div class="features-left">
+                        <img class="features-img-01" src="Images/Overlap-1.jpg" alt="Ground coffee">
+                        <img class="features-img-02" src="Images/Overlap-2.jpg" alt="Three coffees">        
+                    </div>
+                    <div class="features-right">
+                        <h3 class="features-subhead">We believe this is the best coffee in New York. Try it for yourself.</h3>
+                        <p class="features-body">Our roasts feature multiple underlying notes. We believe the unexpected can happen when good design and great coffee come together. We also believe there is an outside in all of us to be found.</p>
+                        <a class="features-cta btn btn-primary" href="#">Visit Shop</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
         
 
 
