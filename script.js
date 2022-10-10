@@ -14,3 +14,16 @@ btnClose.addEventListener('click', function(){
     btnOpen.classList.toggle('d-none');
     nav.classList.toggle('d-none');
 });
+
+
+// Slick Slider
+
+$(document).ready(function(){
+    $('.carousel').slick({
+        accessibility: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+
+    });
+});

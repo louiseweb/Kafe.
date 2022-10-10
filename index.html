@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
     <link rel="stylesheet" href="style.css">
     <title>Kafe - Coffee Shop</title>
 </head>
     <body>
-        <!-- Header -->
+        <!-- Header Section -->
         <header class="header" id="header">
             <div class="header-content container">
                 <a class="header-logo" href="#"><img src="Images/Logo-white.png" alt="Kafe Logo"></a>
@@ -39,46 +42,313 @@
             </div>
         </header>
 
-        <!-- Hero -->
-        <section class="hero">
+        <!-- Hero Section -->
+        <section class="hero py-1">
             <div class="hero-content container">
                 <h1 class="hero-header animate__animated animate__fadeInUp">Your guide to the world of drinking great coffee.</h1>
                 <p class="hero-text animate__animated animate__fadeInUp">The suppliers and producers we work with are at the top of their game. It’s our role to carry the magic from their hands to your table.</p>
                 <div class="hero-btns animate__animated animate__fadeInUp">
-                    <a class="hero-btn btn btn-primary" href="#">Book a table</a>
+                    <a class="hero-btn btn btn-primary mb-5" href="#">Book a table</a>
                     <a class="hero-btn btn btn-secondary" href="#">Discover now</a>
                 </div>
             </div>
         </section>
 
-        <!-- Features-->
-        <section class="features">
-            <div class="features-content container">
-                <div class="features-row-01">
-                    <p class="features-text">From floral and bright to bold and smooth coffee flavors</p>
-                    <h2 class="features-header">Providing unique coffee experiences</h2>
-                    <img class="features-deco" src="Images/Decoration.png" alt="">
+        <!-- Features Section -->
+        <section class="features py-1">
+            <div class="container">
+                <div class="row-1 mb-3 txt-centered">
+                    <h4>From floral and bright to bold and smooth coffee flavors</h4>
+                    <h2>Providing unique coffee experiences</h2>
+                    <img src="Images/Decoration.png">
                 </div>
-                <div class="features-row-02">
-                    <div class="features-left">
-                        <img class="features-img-01" src="Images/Overlap-1.jpg" alt="Ground coffee">
-                        <img class="features-img-02" src="Images/Overlap-2.jpg" alt="Three coffees">        
+                <div class="row-2 grid-2">
+                    <div class="col-1 mb-3">
+                        <img src="Images/Overlap-1.jpg" alt="Ground coffee">
+                        <img class="d-none" src="Images/Overlap-2.jpg" alt="Three coffees">
                     </div>
-                    <div class="features-right">
-                        <h3 class="features-subhead">We believe this is the best coffee in New York. Try it for yourself.</h3>
-                        <p class="features-body">Our roasts feature multiple underlying notes. We believe the unexpected can happen when good design and great coffee come together. We also believe there is an outside in all of us to be found.</p>
-                        <a class="features-cta btn btn-primary" href="#">Visit Shop</a>
+                    <div class="col-2">
+                        <h3>We believe this is the best coffee in New York. Try it for yourself</h3>
+                        <p class="mb-3">Our roasts feature multiple underlying notes. We believe the unexpected can happen when good design and great coffee come together. We also believe there is an outside in all of us to be found.</p>
+                        <a class="btn btn-primary" href="#">Visit Shop</a>
                     </div>
                 </div>
             </div>
-            
-
         </section>
-        
+
+        <!-- Product Section -->
+        <section class="product py-1">
+            <div class="product-content container txt-centered">
+                <div class="product-row-1 mb-3">
+                    <h4 class="product-preheader">Check out our selection of featured coffees and products</h4>
+                    <h2 class="product-header">Providing unique coffee experiences</h2>
+                    <img class="product-decoration" src="Images/Decoration.png">
+                </div>
+                <div class="product-row-2 grid-3">
+                    <article class="product-item mb-3">
+                        <img class="product-img mb-4" src="Images/Product-1.png" alt="Coffee, campfire blend">
+                        <p>Campfire Blend</p>
+                        <p><span class="strike-through">£30.00</span> £19.00</p>
+                    </article>
+                    <article class="product-item mb-3">
+                        <img class="product-img mb-4" src="Images/Product-2.png" alt="Coffee, basecamp blend">
+                        <p>Basecamp Blend</p>
+                        <p>£19.00</p>
+                    </article>
+                    <article class="product-item mb-3">
+                        <img class="product-img mb-4" src="Images/Product-3.png" alt="Coffee, backwoods roast">
+                        <p>Backwoods Roast</p>
+                        <p>£19.00</p>
+                    </article>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section class="services py-1">
+            <div class="services-content container txt-centered">
+                <div class="services-row-1 mb-3">
+                    <h2 class="services-header">We are committed to the highest
+                        standards of quality and service</h2>
+                    <p class="services-subheader">Embracing our heritage while innovating to create new experiences to savor</p>    
+                </div>
+                <div class="services-row-2 grid-3 mb-3">
+                    <article class="services-item mb-4 p-3">
+                        <img class="services-icon" src="Images/Icon-1.svg">
+                        <h3>Barista</h3>
+                        <p>Our coffees are carefully selected for quality, flavor, and social impact</p>
+                    </article>
+                    <article class="services-item mb-4 p-3">
+                        <img class="services-icon" src="Images/Icon-2.svg">
+                        <h3>Coffee</h3>
+                        <p>Our coffees are carefully selected for quality, flavor, and social impact</p>
+                    </article>
+                    <article class="services-item mb-4 p-3">
+                        <img class="services-icon" src="Images/Icon-3.svg">
+                        <h3>Merchandise</h3>
+                        <p>Our coffees are carefully selected for quality, flavor, and social impact</p>
+                    </article>
+                </div>
+                <div class="services-row-3">
+                    <a class="services-btn btn btn-primary" href="#">View our services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu py-1">
+            <div class="container">
+                <div class="row-1 txt-centered">
+                    <h2>We are proud to offer our exclusive coffees</h2>
+                </div>
+                <div class="row-2 grid-3">
+                    <div class="col-1">
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                    </div>
+                    <div class="col-2">
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                    </div>
+                    <div class="col-3">
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                        <article class="mb-4">
+                            <h3>Coffe Latte<span>$2.90</span></h3>
+                            <p>Espresso and Light Layer of Crema</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <a href="#" class="btn btn-secondary txt-centered">View Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Counter Section -->
+        <section class="counter py-1 txt-centered">
+            <div class="container">
+                <div class="row grid-4">
+                    <div class="col-1">
+                        <h2>60+</h2>
+                        <p>Blend Of Varieties</p>
+                    </div>
+                    <div class="col-2">
+                        <h2>80</h2>
+                        <p>Our Locations</p>
+                    </div>
+                    <div class="col-3">
+                        <h2>9k</h2>
+                        <p>Cups Per Day</p>
+                    </div>
+                    <div class="col-4">
+                        <h2>24</h2>
+                        <p>Coffee Brands</p>
+                    </div>
+                </div>       
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="row">
+                <img src="Images/Gallery-1.png" alt="">
+                <img src="Images/Gallery-2.png" alt="">
+                <img src="Images/Gallery-3.png" alt="">
+                <img src="Images/Gallery-4.png" alt="">
+                <img src="Images/Gallery-5.png" alt="">
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog py-1">
+            <div class="container">
+                <div class="row flex">
+                    <h2>Visit our latest news & insights</h2>
+                    <p>We provide essential only news and resources for speciality coffee professionals</p>
+                </div>
+
+                <div class="carousel">
+                    <div>
+                        <img class="mb-5" src="Images/Blog-1.png" alt="">
+                        <div class="mb-5">
+                            <p>Jun 23, 2022<span>By Thomas Smith</span></p>
+                        </div>
+                        <h3 class="mb-4">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee Anywhere On Earth</h3>
+                        <a class="txt-secondary" href="#">Read More</a>
+                    </div>
+                    <div>
+                        <img class="mb-5" src="Images/Blog-2.png" alt="">
+                        <div class="mb-5">
+                            <p>Jun 23, 2022<span>By Thomas Smith</span></p>
+                        </div>
+                        <h3 class="mb-4">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee Anywhere On Earth</h3>
+                        <a class="txt-secondary" href="#">Read More</a>
+                    </div>
+                    <div>
+                        <img class="mb-5" src="Images/Blog-3.jpg" alt="">
+                        <div class="mb-5">
+                            <p>Jun 23, 2022<span>By Thomas Smith</span></p>
+                        </div>
+                        <h3 class="mb-4">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee Anywhere On Earth</h3>
+                        <a class="txt-secondary" href="#">Read More</a>
+                    </div>
+                    <div>
+                        <img class="mb-5" src="Images/Blog-4.jpg" alt="">
+                        <div class="mb-5">
+                            <p>Jun 23, 2022<span>By Thomas Smith</span></p>
+                        </div>
+                        <h3 class="mb-4">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee Anywhere On Earth</h3>
+                        <a class="txt-secondary" href="#">Read More</a>
+                    </div>
+                    <div>
+                        <img class="mb-5" src="Images/Blog-5.jpg" alt="">
+                        <div class="mb-5">
+                            <p>Jun 23, 2022<span>By Thomas Smith</span></p>
+                        </div>
+                        <h3 class="mb-4">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee Anywhere On Earth</h3>
+                        <a class="txt-secondary" href="#">Read More</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section class="subscribe py-1">
+            <div class="container">
+                <div class="row">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>Subscribe to our newsletter and stay updated on the latest news, gifts, and special offers!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer py-1">
+            <div class="container">
+                <div class="row grid-4">
+                    <div class="col">
+                        <img src="Images/Logo-white.png" alt="Kafe. Logo">
+                        <div>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"><i><a>                                     
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Company</h3>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                    </div>
+                    <div class="col">
+                        <h3>Services</h3>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                    </div>
+                    <div class="col">
+                        <h3>Contact</h3>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                        <p>Our company</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </footer>
 
 
-
-
+        <!-- Slick Slider -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script src="script.js"></script>
     </body>
